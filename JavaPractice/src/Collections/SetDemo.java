@@ -6,7 +6,7 @@ import java.util.Iterator;
 public class SetDemo {
 
 	public static void main(String[] args) {
-		// Set
+		// Set similarly linkedhashset and treeset
 		HashSet<String> hs = new HashSet<>();
 		
 		hs.add("Geeks");
