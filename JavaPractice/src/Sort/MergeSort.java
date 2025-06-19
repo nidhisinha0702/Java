@@ -14,10 +14,11 @@ public class MergeSort {
 
 	}
 	
+	//TC->O(nlogn), SC->O(n)
 	private static void mergeSort(int arr[], int low, int high) {
 		
 		if(low>=high) return;
-		int mid = (low + high) / 2;
+		int mid = low + (high - low) / 2; //avoid integer overflow condition
 		
 		mergeSort(arr, low, mid);
 		mergeSort(arr, mid + 1, high);
