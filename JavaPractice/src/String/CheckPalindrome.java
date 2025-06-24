@@ -5,21 +5,20 @@ public class CheckPalindrome {
 	public static void main(String[] args) {
 		// WAP to check if the string is palindrome
 		String s = "madam";
-		//System.out.println(" the string is palindrome : "+checkPalindrome(s));
-		System.out.println("stribg builder : "+isPalindrome(s));
+		System.out.println(" the string is palindrome : "+checkPalindrome(s));
+		//System.out.println("stribg builder : "+isPalindrome(s));
 
 	}
 	
 	private static boolean checkPalindrome(String input) {
-		boolean result = true;
+		if(input == null || input.length() == 0) return true;
 		int length = input.length();
 		int i = 0;
 		while(i<length/2) {
-			if(input.charAt(i) != input.charAt(length - 1 -1)) {
-				result = false;
-				break;
-			}
-		}return result;
+			if(input.charAt(i) != input.charAt(length - i - 1)) {
+				return false;
+			}i++;
+		}return true;
 	}
 	
 	static boolean isPalindrome(String part) {
