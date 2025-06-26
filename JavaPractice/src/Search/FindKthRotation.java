@@ -14,7 +14,7 @@ public class FindKthRotation {
 	}
 	public static int findKRotation(List<Integer> arr) {
         // Code here
-        //we need to find the smallest element half and return smallest element ind
+        //we need to find the smallest element half and return smallest element index
         int start = 0;
         int end = arr.size() - 1;
         
