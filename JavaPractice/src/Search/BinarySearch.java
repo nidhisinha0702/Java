@@ -9,7 +9,7 @@ public class BinarySearch {
 		int high = arr.length - 1;
 		int key = 6;
 		
-		System.out.println(" The ele is present at index : "+binarySearch(arr, low, high, key)); 
+		System.out.println(" The ele is present at index : "+binarySearchII(arr, low, high, key)); 
 		
 
 	}
@@ -24,6 +24,20 @@ public class BinarySearch {
 				high = mid - 1;
 			}else
 				low = mid + 1;
+		}
+		return -1;
+	}
+	
+	private static int binarySearchII(int arr[], int low, int high, int key) {
+		
+		if(low<=high) {
+			int mid = low + (high - low)/2;
+			if(arr[mid] == key)
+				return mid;
+			else if(arr[mid] > key) {
+				return binarySearchII(arr, low, mid - 1, key);
+			}else
+				return binarySearchII(arr, mid + 1, high, key);
 		}
 		return -1;
 	}
