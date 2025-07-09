@@ -4,7 +4,6 @@ public class PowerXn {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		double x = 2.0000; int n = 2;
 		System.out.println("power of x is : "+myPow(x, n));
 
@@ -19,7 +18,7 @@ public class PowerXn {
 	        if(x == -1 && n%2 == 1) return -1.0;
 
 	        long binForm = n;
-	        //for -ve number
+	        //for negative number
 	        if(n < 0){
 	            x = 1/x;
 	            binForm = -binForm;
