@@ -7,6 +7,8 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class SortingHashmap {
 
@@ -28,6 +30,9 @@ public class SortingHashmap {
 		for(Map.Entry<String, Integer> en: hm.entrySet()) {
 			System.out.println(en.getKey() +" "+en.getValue());
 		}
+		
+		String str = "tree";
+		System.out.println(frequencySort(str));
 
 	}
 	
@@ -51,4 +56,21 @@ public class SortingHashmap {
 		return mpp;
 	}
 
+	private static String frequencySort(String s) {
+		
+		HashMap<Character, Integer> freq = new HashMap<>();
+		//count the frequency of each character
+		for(int i=0;i<s.length();i++) {
+			freq.put(s.charAt(i), freq.getOrDefault(s.charAt(i), 0)+1);
+		}
+		
+		//sort the map based on freq
+		Map<Character, Integer> descSortFreq = freq.entrySet().stream().sorted((i1,i2)->i2.getValue().compareTo(i1.getValue()))
+				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,(oldval,newval) -> oldval, LinkedHashMap::new));
+		
+		//fetch each character based on count and append to a string
+		String ans = descSortFreq.entrySet().stream().flatMap(entry -> Stream.generate(()->entry.getKey()).limit(entry.getValue())).map(String::valueOf).collect(Collectors.joining());
+		
+		return ans;
+	}
 }
