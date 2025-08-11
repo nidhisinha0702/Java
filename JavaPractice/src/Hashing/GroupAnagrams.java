@@ -13,6 +13,7 @@ public class GroupAnagrams {
 		 String strs[] = {"eat","tea","tan","ate","nat","bat"};
 		 System.out.println(groupAnagrams(strs));
 	}
+	//O(n * L log L) 
 	public static List<List<String>> groupAnagrams(String[] strs) {
 
         // Create a map to group the anagrams, where the key is the sorted string, and the value is a list of original strings.
@@ -26,7 +27,9 @@ public class GroupAnagrams {
 
             //create a new string from sorted char array
             String sortedStr = String.valueOf(charArray);
-
+            
+            //if key is absent create a new list and add str
+            //if key is present return existing list and then add str
             anagramsMap.computeIfAbsent(sortedStr, k-> new ArrayList<>()).add(str);
         }
 
