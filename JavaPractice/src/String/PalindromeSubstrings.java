@@ -3,7 +3,7 @@ package String;
 public class PalindromeSubstrings {
 
 	public static void main(String[] args) {
-		String s = "abc";
+		String s = "bbabcbcab";
 		System.out.println(countSubstrings(s));
 
 	}

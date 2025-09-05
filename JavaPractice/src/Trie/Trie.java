@@ -30,7 +30,7 @@ public class Trie {
 
 	}
 	
-	static void insert(String word) {
+	public static void insert(String word) {
 		Node node = root;
 		for(int i=0;i<word.length();i++) {
 			if(!node.containsKey(word.charAt(i))) {
@@ -42,7 +42,7 @@ public class Trie {
 		
 	}
 	
-	static boolean search(String word) {
+	public static boolean search(String word) {
 		Node node = root;
 		for(int i=0;i<word.length();i++) {
 			if(!node.containsKey(word.charAt(i))) {
@@ -81,6 +81,16 @@ public class Trie {
 				return false;
 			}
 		}return flag;
+	}
+	
+	public static String searchWord(String word) {
+		Node node = root;
+		String ans = "";
+		for(int i=0;i<word.length();i++) {
+			if(node.containsKey(word.charAt(i))) {
+				ans += word.charAt(i);
+			}node = node.get(word.charAt(i));
+		}return ans;
 	}
 	
 	static List<List<String>> getSuggestions(String str) {
