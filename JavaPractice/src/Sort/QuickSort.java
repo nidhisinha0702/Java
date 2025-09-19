@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class QuickSort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// QuickSort-pick pivot and partition
 		int arr[] = {20, 24, 2, 87, 25, 1};
 		quickSort(arr, 0, arr.length-1);
 		System.out.println(Arrays.toString(arr));
@@ -24,7 +24,8 @@ public class QuickSort {
 		int pivot = arr[end];
 		//iterate over the array
 		for(int j=st;j<end;j++) {
-			if(arr[j] <= pivot) {
+			if(arr[j] <= pivot) {//asc
+				//arr[j] >= pivot --desc
 				idx++;
 				//swap
 				swap(arr, j, idx);
@@ -40,6 +41,4 @@ public class QuickSort {
 		arr[l] = arr[r];
 		arr[r] = temp;
 	}
-	
-
 }
