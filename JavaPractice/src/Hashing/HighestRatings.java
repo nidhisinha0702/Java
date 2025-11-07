@@ -66,12 +66,3 @@ class FoodRatings{
 		}
 	}
 }
-
-class Pair{
-	String first;
-	String second;
-	Pair(String f, String s){
-		first = f;
-		second = s;
-	}
-}

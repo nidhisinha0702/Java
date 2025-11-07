@@ -18,6 +18,7 @@ public class CountWords {
 		
 		//identity will return the same word that it gets from stream and counting will return the count of that word
 		Map<String, Long> mpp = list.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		//return the words with max count
 		Set<String> set = list.stream().filter(name -> Collections.frequency(list, name) > 1).collect(Collectors.toSet());
 		System.out.println(mpp);
 		System.out.println(set);
