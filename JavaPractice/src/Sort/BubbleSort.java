@@ -14,18 +14,18 @@ public class BubbleSort {
 	//TC->O(n^2)
 	private static void bubble(int arr[], int n) {
 		//it runs for n-1 iteration and larger values are swapped to last
-		for(int i=n-1;i>=0;i--) {
+		for(int i=0;i<n-1;i++) {
 			//optimization
-			int didSwap = 0;
-			for(int j=0;j<=i-1;j++) {
+			boolean didSwap = false;
+			for(int j=0;j<n-i-1;j++) {
 				//compare each element with next
 				if(arr[j] > arr[j+1]) {
 					int temp = arr[j];
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
-					didSwap = 1;
+					didSwap = true;
 				}
-			}if(didSwap == 0) {//already sorted
+			}if(!didSwap) {//already sorted
 				break;
 			}
 		}
