@@ -4,12 +4,13 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
+import java.util.stream.Collectors;
 public class FirstUniqueChar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String str = "level";
-		System.out.println(firstUniqChar(str));
+		System.out.println(nonRepeatingChar(str));
 	}
 	//O(n)
 	public static int firstUniqChar(String s) {
@@ -48,5 +49,11 @@ public class FirstUniqueChar {
         return -1;
        
     }
+	
+	public static char nonRepeatingChar(String s) {
+		
+		return s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(c->c, Collectors.counting()))
+				.entrySet().stream().filter(e -> e.getValue() == 1).findFirst().map(Map.Entry::getKey).orElse(null);
+	}
 
 }
