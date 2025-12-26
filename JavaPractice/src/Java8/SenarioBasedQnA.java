@@ -1,6 +1,8 @@
 package Java8;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -25,7 +27,11 @@ public class SenarioBasedQnA {
 		Map<Character, Long> charCount = str.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(charCount);
 		
+		//List<Employee> employees = new ArrayList<>();
+		//Employee e1 = new Employee(1,"abc",1000);
 		
+		//List<Employee> sorted = employees.stream().sorted(Comparator.comparing(Employee::getSalary).reversed().
+			//	thenComparing(Employee::getName)).collect(Collectors.toList());
 		
 	}
 

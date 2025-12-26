@@ -2,6 +2,8 @@ package SlidingWindow;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class LongestSubstringWithoutDuplicate {
 
@@ -30,4 +32,6 @@ public class LongestSubstringWithoutDuplicate {
             high++;
         }return res;
     }
+	
+	
 }
