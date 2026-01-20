@@ -1,6 +1,6 @@
 package kadanespattern;
 
-public class MinSumCircularSubarray {
+public class MaxSumCircularSubarray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,11 +33,11 @@ public class MinSumCircularSubarray {
         for(int x:nums){
             totSum += x;
         }
-
+//complete ans gives min ans
          if(totSum == minAns){
              return maxAns;
          }
-
+//totsum - minans give maxans
         int circular = totSum - minAns;
         return Math.max(maxAns, circular);
     }
