@@ -19,6 +19,7 @@ public class MaxSubarraySumWithOneDelete {
             int oldOneDelete = bestOneDelete;
 
             bestNoDelete = Math.max(oldNoDelete + arr[i], arr[i]);
+            //oldOneDelete + a[i] , oldNoDelete (as a[i] is the one delete)
             bestOneDelete = Math.max(oldOneDelete + arr[i], oldNoDelete);
 
             res = Math.max(res, Math.max(bestNoDelete, bestOneDelete));

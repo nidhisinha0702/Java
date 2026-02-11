@@ -10,6 +10,7 @@ public class MaximumAbsoluteSumSubarray {
 	}
 
 	public static int maxAbsoluteSum(int[] nums) {
+        //abs of minSum will also give positive value so calculate both
         int minEnd = 0;
         int maxEnd = 0;
         int maxSum = Integer.MIN_VALUE;

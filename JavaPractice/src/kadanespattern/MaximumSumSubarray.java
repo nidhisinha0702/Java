@@ -1,6 +1,6 @@
 package kadanespattern;
 
-public class MaximimSumSubarray {
+public class MaximumSumSubarray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
