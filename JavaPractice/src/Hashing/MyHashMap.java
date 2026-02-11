@@ -2,16 +2,17 @@ package Hashing;
 
 public class MyHashMap<K, V> {
     //Node class entry
-    static class Node<K, V>{
+    static class Node<K, V> {
         K key;
         V value;
-        Node<K,V> next;
+        Node<K, V> next;
 
-        Node(K key, V value, Node<K,V> next){
+        Node(K key, V value) {
             this.key = key;
             this.value = value;
-            this.next = next;
+            next = null;
         }
+    }
 
         private final int capacity = 16;
         //private final float LOAD_FACTOR = 0.75f;
@@ -20,7 +21,7 @@ public class MyHashMap<K, V> {
        // int size;
        // int threshold;
 
-        public MyHashMap(){
+        MyHashMap(){
             bucket = new Node[capacity];
         }
 
@@ -61,5 +62,4 @@ public class MyHashMap<K, V> {
             }return null;
 
         }
-    }
 }
