@@ -9,7 +9,7 @@ public class BFS {
         // code here
         ArrayList<Integer> result = new ArrayList<>();
         int n = adj.size();
-        gitQueue<Integer> q = new LinkedList<>();
+        Queue<Integer> q = new LinkedList<>();
         boolean vis[] = new boolean[n];
         q.offer(0);
         vis[0] = true;
