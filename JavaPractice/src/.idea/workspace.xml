@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dcbed64-dfab-4938-8d07-0c0f59c9dfc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Heaps/KWeakestRow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Heaps/LastStoneWeight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Heaps/MergeKSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Heaps/ReorganizeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Heaps/KClosestPointToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Heaps/KClosestPointToOrigin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Heaps/KFrequentWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/Heaps/KFrequentWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Heaps/KthSmallestElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Heaps/KthSmallestElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaPractice/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/NetworkDelay.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/NetworkDelay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/ShortestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/ShortestPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/SurroundedRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/SurroundedRegion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph/TopoSortBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graph/TopoSortBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPractice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPractice/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,31 +36,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AggressiveCows.executor": "Run",
-    "Application.Employee.executor": "Run",
-    "Application.KWeakestRow.executor": "Run",
-    "Application.KokoEatingBanana.executor": "Run",
-    "Application.KthSmallest.executor": "Run",
-    "Application.KthSmallestElement.executor": "Run",
-    "Application.LastStoneWeight.executor": "Run",
-    "Application.MergeKSortedArray.executor": "Run",
-    "Application.MinimumSwap.executor": "Run",
-    "Application.ReorganizeString.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Feb2026",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nsinh/Documents/Projects/Java/JavaPractice/src",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AggressiveCows.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DefaultMethodsExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DefaultMethodsExample2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Employee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IsSorted.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KWeakestRow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KokoEatingBanana.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KthSmallest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KthSmallestElement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LastStoneWeight.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LevelOrder.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeKSortedArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MinimumSwap.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumericStreamExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumericStreamMapExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumericStreamsBoxingUnBoxingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OptionalPresentExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalindromeString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ParallelStreamExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PhoneNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrintAdjList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReorganizeString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SumClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SumOfDigits.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TopoSortBFS.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ZigZag.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;May2026&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nsinh/Documents/Projects/Java/JavaPractice/src&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nsinh\Documents\Projects\Java\JavaPractice\src" />
@@ -113,5 +129,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
