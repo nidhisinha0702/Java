@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dcbed64-dfab-4938-8d07-0c0f59c9dfc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DP/ClimbingStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DP/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DP/HouseRob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DP/Knapsack0_1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
