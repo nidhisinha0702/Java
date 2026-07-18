@@ -27,4 +27,24 @@ public class Knapsack0_1 {
 
         return dp[i][cap] = Math.max(pick, notpick);
     }
+
+    public int knapsack1(int W, int val[], int wt[]) {
+        // code here
+        int n = wt.length;
+        int[][] dp = new int[n+1][W+1];//dp array for storing val array and W capacity
+        for(int j=0;j<=W;j++)
+            dp[n][j] = 0;//base case for all W i==n is 0
+
+        for(int i=n-1;i>=0;i--){//val
+            for(int j=0;j<=W;j++){//cap(W)
+                if(wt[i] > j)//current cap is greater than cap(W)
+                    dp[i][j] = dp[i+1][j];//go to next
+                else
+                    dp[i][j] = Math.max(val[i] + dp[i+1][j - wt[i]], dp[i+1][j]);//pick and not pick choices
+            }
+        }
+
+        return dp[0][W];
+
+    }
 }
